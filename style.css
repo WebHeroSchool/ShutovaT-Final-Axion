@@ -44,7 +44,7 @@ body {
   text-transform: uppercase;
 }
 
-.menu__form {
+.menu-form {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -52,7 +52,7 @@ body {
   width: 19%;
 }
 
-.menu__form::after {
+.menu-form::after {
   display: flex;
   position: absolute;
   top: 20px;
@@ -62,16 +62,16 @@ body {
   background: #000;
 }
 
-.menu__form_search {
+.menu-form__search {
   border: none;
   width: 90%;
 }
 
-.menu__form_search:focus {
+.menu-form__search:focus {
   outline: none;
 }
 
-.menu__form_button {
+.menu-form__button {
   width: 13px;
   height: 14px;
   background: url(img/saerch.svg);
@@ -96,4 +96,36 @@ body {
   width: 20px;
   height: 20px;
   background: url(img/flag.svg);
+}
+
+/*<================== top-content ================>*/
+
+.top-content {
+  position: relative;
+  margin-bottom: 50px;
+  height: 280px;
+  background: url(img/top-content.svg);
+}
+
+.top-content__block {
+  position: absolute;
+  margin: 65px 0 0 60px;
+  width: 18%;
+}
+.top-content__title {
+  margin-bottom: 15px;
+  font: 700 30px/29px 'gotham_pro', arial, helvetica, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.top-content__link {
+  display: block;
+  position: absolute; 
+  font: 12px/11px 'gotham_pro', arial, helvetica, sans-serif;
+  width: 63%;
+  color: #fff;
+  background: top right no-repeat url(img/arrow.png);
+  text-decoration: none;
+  text-transform: uppercase;
 }
