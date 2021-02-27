@@ -29,7 +29,7 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  margin: 20px 0 0 0;
+  margin: 27px 0 0 0;
   width: 90%;
 }
 
@@ -320,17 +320,18 @@ body {
 }
 
 .stori__image {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   width: 100%;
   height: 147px;
 }
 
 .stori__title {
+  margin-bottom: 10px;
   font: bold 18px/17px 'gotham_pro', arial, helvetica, sans-serif;
 }
 
 .stori__text {
-  margin-bottom: 3px;
+  margin: 10px 0 3px 0;
   font: 14px/17px 'gotham_pro', arial, helvetica, sans-serif;
 }
 .image__stories-1 {
@@ -394,6 +395,8 @@ body {
 }
 
 .footer__wrapper {
+  display: flex;
+  justify-content: space-between;
   margin: auto;
   width: 65%;
 }
@@ -401,11 +404,7 @@ body {
 .footer__menu {
   display: inline-block;
   vertical-align: top;
-  margin: 60px 82px 40px 0;
-}
-
-.footer__menu:last-child {
-  margin-right: 0;
+  margin: 60px 0 40px 0;
 }
 
 .footer__menu_title {
@@ -422,7 +421,7 @@ body {
 .footer__menu_button{
   margin-bottom: 30px;
   padding: 9px;
-  font: 12px/11px 'gotham_pro', arial, helvetica, sans-serif;
+  font: 700 12px/11px 'gotham_pro', arial, helvetica, sans-serif;
   text-transform: uppercase;
   width: 136px;
   background: #000;
@@ -439,7 +438,8 @@ body {
 
 .footer__copyright {
   display: block;
-  padding-bottom: 90px;
+  margin-bottom: 0;
+  padding-bottom: 33px;
   font: 12px/11px 'gotham_pro', arial, helvetica, sans-serif;
   text-align: center;
 }
