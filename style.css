@@ -15,7 +15,7 @@ body {
 
 .logo {
   position: relative;
-  padding: 32px 0 0 0;
+  margin: 32px 0 0 0;
   width: 55px;
   height: 56px;
   background: bottom no-repeat url(img/logo.svg);
@@ -42,6 +42,11 @@ body {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.menu__item:hover {
+  box-shadow: 0 4px 8px #ccc;
 }
 
 .menu-form {
@@ -74,8 +79,16 @@ body {
 .menu-form__button {
   width: 13px;
   height: 14px;
-  background: url(img/saerch.svg);
+  background: no-repeat url(img/saerch.svg);
+  background-size: 100% 100%;
   border: none;
+  cursor: pointer;
+  transition: 0.4;
+}
+
+.menu-form__button:hover {
+  width: 20px;
+  height: 20px;
 }
 
 .menu__item_counter::after {
@@ -95,7 +108,13 @@ body {
   margin: 0;
   width: 20px;
   height: 20px;
-  background: url(img/flag.svg);
+  background: no-repeat url(img/flag.svg);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.menu__flag:hover {
+  box-shadow: 0 4px 8px #ccc;
 }
 
 /*<================== top-content ================>*/
@@ -104,7 +123,7 @@ body {
   position: relative;
   margin-bottom: 50px;
   height: 280px;
-  background: url(img/top-content.svg);
+  background: no-repeat url(img/top-content.svg);
 }
 
 .top-content__block {
@@ -128,6 +147,11 @@ body {
   background: top right no-repeat url(img/arrow.png);
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.top-content__link:hover {
+  box-shadow: 0 4px 8px #fff;
 }
 
 /*<============= catalog ==============>*/
@@ -250,7 +274,7 @@ body {
   margin: auto 5px auto auto;
   width: 644px;
   height: 73%;
-  background: url(img/video-content.png);
+  background: no-repeat url(img/video-content.png);
 }
 
 .video-play {
@@ -261,6 +285,12 @@ body {
   border: 6px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   background: padding-box #fff;
+  cursor: pointer;
+  transition: 0.4;
+}
+
+.video-play:hover {
+  box-shadow: 0 4px 8px #fff;
 }
 
 .play-triangle {
@@ -293,6 +323,11 @@ body {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.video-content__link:hover {
+  box-shadow: 0 4px 8px #fff;
 }
 
 /*<================= stories ========================>*/
@@ -335,15 +370,15 @@ body {
   font: 14px/17px 'gotham_pro', arial, helvetica, sans-serif;
 }
 .image__stories-1 {
-  background: url(img/stories-1.png);
+  background: no-repeat url(img/stories-1.png);
 }
 
 .image__stories-2 {
-  background: url(img/stories-2.png);
+  background: no-repeat url(img/stories-2.png);
 }
 
 .image__stories-3 {
-  background: url(img/stories-3.png);
+  background: no-repeat url(img/stories-3.png);
 }
 
 .stori__link {
@@ -355,6 +390,11 @@ body {
   background: right no-repeat url(img/black-arrow.png);
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.stori__link:hover {
+  box-shadow: 0 4px 8px #ccc;
 }
 
 .stori__date {
@@ -398,18 +438,28 @@ body {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  width: 65%;
+  width: 66%;
 }
 
 .footer__menu {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
   vertical-align: top;
   margin: 60px 0 40px 0;
 }
 
+.footer__menu:first-child {
+  margin-right: 40px;
+}
+
 .footer__menu_title {
+  margin-bottom: 15px;
   font: 700 12px/11px 'gotham_pro', arial, helvetica, sans-serif;
   text-transform: uppercase;
+}
+
+.title-375 {
+  margin-bottom: 10px;
 }
 
 .footer__menu_item, .footer__menu_subtitle {
@@ -418,22 +468,57 @@ body {
   color: #fff;
 }
 
+.footer__menu_subtitle {
+  margin-top: 0;
+}
+
+.footer__menu_item {
+  margin-bottom: 6px;
+}
+
 .footer__menu_button{
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   padding: 9px;
-  font: 700 12px/11px 'gotham_pro', arial, helvetica, sans-serif;
+  font: 700 10px/9px 'gotham_pro', arial, helvetica, sans-serif;
   text-transform: uppercase;
   width: 136px;
   background: #000;
   color: #fff;
   border: 1px solid #fff;
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.footer__menu_button:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #3A2F28;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 
 .social-network {
   display: inline-block;
-  margin-right: 25px;
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.social-network:last-child {
+  margin-right: 0;
+}
+
+.icon-facebook:hover {
+  width: 10px;
+  height: 25px;
+}
+
+.icon-twitter:hover,
+.icon-instagram:hover,
+.icon-pinterest:hover{
+  width: 25px;
+  height: 25px;
 }
 
 .footer__copyright {
