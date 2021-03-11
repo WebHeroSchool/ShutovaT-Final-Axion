@@ -28,6 +28,7 @@ body {
 
 .menu {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   margin: 27px 0 0 0;
   width: 90%;
@@ -53,7 +54,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-	margin: 0 35px 0 16%;
+	margin: 0 3% 0 16%;
   width: 19%;
 }
 
@@ -124,6 +125,7 @@ body {
   margin-bottom: 50px;
   height: 280px;
   background: no-repeat url(img/top-content.svg);
+  background-size: cover;
 }
 
 .top-content__block {
